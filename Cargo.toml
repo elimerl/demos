@@ -1,0 +1,12 @@
+[package]
+name = "thingy"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "entities"
+path = "src/entities.rs"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rayon = "1.5.3"
