@@ -1,3 +1,10 @@
+//! Possible simple but reasonably fast entity implementation, where entities may have a fixed set of components and run systems. Much simpler than generic ECS.
+//!
+//! Pros:
+//!  - Simple. Fixed components is much simpler than a generic thing.
+//! Cons:
+//!  - Entities are large because they have Option<Component> * every component. Partially solvable for large components by boxing them.
+
 use std::{collections::HashMap, fmt::Debug};
 
 use downcast_rs::{impl_downcast, Downcast};
